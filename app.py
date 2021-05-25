@@ -1,3 +1,4 @@
+# Developed by https://github.com/285187
 from flask import Flask, g, redirect, url_for, request
 from flask_oidc import OpenIDConnect
 import uuid
@@ -15,7 +16,7 @@ app = Flask(__name__)
 
 app.wsgi_app = _force_https(app.wsgi_app)
 
-app.config["OIDC_CLIENT_SECRETS"] = "new-w3id-config.json"
+app.config["OIDC_CLIENT_SECRETS"] = "config.json"
 app.config["OIDC_COOKIE_SECURE"] = False
 app.config["OIDC_CALLBACK_ROUTE"] = "/oidc/callback"
 app.config["SECRET_KEY"] = "b'\x1d \xe5h\xe7~\xd2<\xe9\x92c\xa9\x8b\xad/\x8f'"
