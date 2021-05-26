@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-LABEL maintainer="Igor Vieira https://github.com/imvieira"
+LABEL maintainer="Developed by https://github.com/igormv28"
 
 RUN apt-get update && \
     apt-get install -y python3-pip python3-dev && \
